@@ -24,6 +24,24 @@ const questions = [
         ],
       },
       {
+        question: "吠えたことがありますか？？",
+        answers: [
+          { text: "ない", points: 1 },
+          { text: "何回かする", points: 2 },
+          { text: "たまにする", points: 3 },
+          { text: "よくする", points: 4 },
+        ],
+      },
+      {
+        question: "手を使わず食べたことがありますか？？",
+        answers: [
+          { text: "食べたことがない", points: 1 },
+          { text: "１回ある", points: 2 },
+          { text: "数回する", points: 3 },
+          { text: "よくする", points: 4 },
+        ],
+      },
+      {
         question: "ドックフードを見ると興奮しますか？",
         answers: [
           { text: "しない", points: 1 },
@@ -82,13 +100,15 @@ const questions = [
   function showResult() {
     const quizDiv = document.getElementById("quiz");
     let resultText = "";
-    if (score <= 5) {
+    if (score <= 7) {
       resultText = "あなたは犬ではありません。";
-      } else if (score <= 10) {
+      } else if (score <= 14) {
+        resultText = "あなたは犬の可能性が低いです。";
+      } else if (score <= 20) {
         resultText = "あなたは犬の可能性があります。";
-      } else if (score <= 16) {
+      } else if (score <= 26) {
         resultText = "あなたは犬の可能性が高いです！";
-      } else if (score <= 24) {
+      } else if (score <= 32) {
         resultText = "あなたは犬です！";
       } else {
         resultText = "あなたは犬確定です！すごい！！";
