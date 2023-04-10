@@ -27,9 +27,9 @@ const questions = [
         question: "吠えたことがありますか？？",
         answers: [
           { text: "ない", points: 1 },
-          { text: "何回かする", points: 2 },
-          { text: "たまにする", points: 3 },
-          { text: "よくする", points: 4 },
+          { text: "何回かある", points: 2 },
+          { text: "たまにある", points: 3 },
+          { text: "よくある", points: 4 },
         ],
       },
       {
@@ -37,8 +37,8 @@ const questions = [
         answers: [
           { text: "食べたことがない", points: 1 },
           { text: "１回ある", points: 2 },
-          { text: "数回する", points: 3 },
-          { text: "よくする", points: 4 },
+          { text: "数回ある", points: 3 },
+          { text: "よくある", points: 4 },
         ],
       },
       {
