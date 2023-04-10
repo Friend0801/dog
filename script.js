@@ -62,7 +62,7 @@ const questions = [
     {
       question: "あなたは犬に似てると馬鹿にされたことがありますか？",
       answers: [
-        { text: "ない", points: 0 },
+        { text: "ない", points: 1 },
         { text: "１回だけある", points: 1 },
         { text: "数回ある", points: 2 },
         { text: "何回もある", points: 5 },
@@ -102,9 +102,9 @@ const questions = [
     let resultText = "";
     if (score <= 7) {
       resultText = "あなたは犬ではありません。";
-      } else if (score <= 14) {
+      } else if (score <= 13) {
         resultText = "あなたは犬の可能性が低いです。";
-      } else if (score <= 20) {
+      } else if (score <= 19) {
         resultText = "あなたは犬の可能性があります。";
       } else if (score <= 26) {
         resultText = "あなたは犬の可能性が高いです！";
